@@ -3,36 +3,6 @@ from rembg import remove
 from PIL import Image
 import io
 
-
-# def remove_background(input_image):
-#     # Removing the background from the given image
-#     output_image = remove(input_image)
-#     return output_image
-
-# def main():
-#     st.title("Background Remover")
-
-#     uploaded_file = st.file_uploader("Upload an image", type=["jpg", "png", "jpeg"])
-
-#     if uploaded_file is not None:
-#         # Display uploaded image
-#         input_image = Image.open(uploaded_file)
-#         st.image(input_image, caption="Uploaded Image", use_column_width=True)
-
-#         # Process the image and remove background
-#         output_image = remove_background(input_image)
-
-#         # Display the processed image
-#         st.subheader("Processed Image")
-#         st.image(output_image, caption="Image with Background Removed", use_column_width=True)
-
-# if __name__ == "__main__":
-#     main()
-import streamlit as st
-from rembg import remove
-from PIL import Image
-import io
-
 def remove_background(input_image):
     # Removing the background from the given image
     output_image = remove(input_image)
